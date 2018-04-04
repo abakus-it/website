@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_website_config_settings_header_footer_check" model="ir.ui.view">
+            <field name="name">view_website_config_settings_header_footer_check</field>
+            <field name="model">website.config.settings</field>
+            <field name="inherit_id" ref="website.view_website_config_settings"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='advanced']" position="inside">
+                    <label for="show_header"/>
+                    <div name="show_header">
+                        <div class="oe_inline">
+                            <field name="show_header" />
+                        </div>
+                    </div>
+                    <label for="show_footer"/>
+                    <div name="show_footer">
+                        <div class="oe_inline">
+                            <field name="show_footer" />
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
